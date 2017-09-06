@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>A Todo List with React, Flask and Postgres</title>
+    <script src="https://fb.me/react-15.0.0.js"></script>
+    <script src="https://fb.me/react-dom-15.0.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <!-- d3 > jQuery -basically just for api intefacing -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+      body {
+        padding: 50px;
+        background-color: #66CCFF;
+        font-family: sans-serif;
+        text-align: center;
+      }
+      .todoListMain .header input {
+        padding: 10px;
+        font-size: 16px;
+        border: 2px solid #FFF;
+      }
+      .todoListMain .header button {
+        padding: 10px;
+        font-size: 16px;
+        margin-left: 10px;
+        background-color: #0066FF;
+        color: #FFF;
+        border: 2px solid #0066FF;
+      }
+      .todoListMain .header button:hover {
+        background-color: #003399;
+        border: 2px solid #003399;
+        cursor: pointer;
+      }
+      #todoListInput input[type="text"] {
+        padding: 10px;
+        border: solid 5px #c9c9c9;
+        box-shadow: inset 0 0 0 1px #707070;
+        transition: box-shadow 0.3s, border 0.3s;
+      }
+      #todoListInput input[type="text"]:focus,
+      #todoListInput input[type="text"].focus {
+        border: solid 5px #969696;
+      }
+    </style>
+  </head>
+  <body>
+      <div id="nameHolder"></div>
+      <div id="buttonHolder"></div>
+      <div id="vowels"></div>
+      <div id="cardLabelSquare"></div>
+      <div id="userList"></div>
+      <div id="todoListInput"></div>
+      <div id="shirt"></div>
+      <div id="todoListDisplay"></div>
+      <div id="todoList"></div>
+      <script type="text/babel" src="static/app.js"></script>
+  </body>
+</html>
