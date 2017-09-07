@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Todo List</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/assets/css/ticTailTodo.css" />
+		<link rel="shortcut icon" href="../static/assets/images/favicon.ico" type="image/x-icon">
+		<noscript><link rel="stylesheet" href="../static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body>
+
+    <!-- User Prologue and Input -->
+			<div id="wrapper">
+				<div id="title">Create and Update Your Todo List!</div>
+				<div id="header-wrap">
+					<!-- Header -->
+					<header id="header" class="alt">
+						<nav id="nav">
+                <div id="userList"></div>
+						</nav>
+					</header>
+				</div>
+
+				<!-- List display and todo input -->
+					<header id="header">
+						<div id="reportrange" class="pull-right"></div>
+						<div class="content">
+							<div class="inner">
+                  <div id="todoListDisplay"></div>
+                  <div id="remainingTodos"></div>
+							</div>
+						</div>
+						<div>
+              <div id="todoListInput"></div>
+						<nav>
+							<div id="controls" align="top"/>
+						</nav>
+					</header>
+
+			</div>
+
+		<!-- Background Effects -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+      <script src="https://fb.me/react-15.0.0.js"></script>
+      <script src="https://fb.me/react-dom-15.0.0.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+      <!-- d3 > jQuery -basically just for api intefacing -->
+      <script src="https://d3js.org/d3.v4.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!--Actual Loading of the app-->
+      <script type="text/babel" src="static/assets/js/todoApp.js"></script>
+
+	</body>
+</html>
